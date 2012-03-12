@@ -1,6 +1,6 @@
 <div class="yui-g">
   <div class="yui-u first">
-  <%= form_for(:mp3, :url => { :controller => 'mp3s', :action => 'create' }, :html => { :multipart => true }) do |f| %>
+  <%= form_for([:admin, @product, @mp3], :html => { :multipart => true }) do |f| %>
     <fieldset>
       <legend><%=t 'upload_mp3' %></legend>
       <p class="form-buttons">
