@@ -6,7 +6,7 @@
 </div>
 
 <div class='mp3_player'>
-  <% flashvars = "/swf/dewplayer-mini.swf?showtime=false&mp3=#{mp3.attachment.url}" %>
+  <% flashvars = "/assets/swfs/dewplayer-mini.swf?showtime=false&mp3=#{mp3.attachment.url}" %>
   <object type='application/x-shockwave-flash' data='<%= flashvars %>' width='160' height='20' id='dewplayer-mini'>
     <param name='wmode' value='transparent' />
     <param name='movie' value='<%= flashvars %>' />
